@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<style>
+    
+button:hover{
+    cursor: pointer;
+    opacity: 0.3;
+    background-color: rgb(0, 119, 255);
+    color: white;
+    transition: opacity 0.15s;
+}
+header{
+    background-color: rgb(1, 141, 255);
+    margin: none;
+}
+.container{
+    display: flex;
+    justify-content: flex-end;
+    
+
+}
+.more{
+    margin-left: 100px;
+    height: 45px;
+    border: none;
+    background-color: rgb(14, 248, 248);
+    width: 80px;
+    border-radius: 50px;
+}
+.service{
+    margin-left: 100px;
+    height: 45px;
+    border: none;
+    background-color: rgb(14, 248, 248);
+    width: 80px;
+    border-radius: 50px;
+}
+.about{
+    height: 45px;
+    border: none;
+    background-color: rgb(14, 248, 248);
+    width: 80px;
+    border-radius: 50px;
+}
+.home{
+    height: 45px;
+    border: none;
+    background-color: rgb(14, 248, 248);
+    width: 80px;
+    border-radius: 50px;
+}
+#hello{
+    height: 200px;
+    width: 400px;
+    background-color: gray;
+    text-align: center;
+    font-size: 80px;
+    margin-left: 480px;
+    border-radius: 25px;
+}
+.click{
+    height: 45px;
+    border: none;
+    background-color: rgb(14, 248, 248);
+    width: 80px;
+    border-radius: 50px;
+    margin-left: 650px;
+
+}
+.containers{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: antiquewhite;
+}
+.card{
+    background-color: rgb(107, 76, 180);
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    
+}
+.cardla{
+    height:100px;
+    background-color: aqua;
+    
+}
+    
+    
+</style>
+    </head>
+    <body>
+        <header>
+            <button class="home">HOME</button>
+            <section class="container">
+            <button class="about">ABOUT</button>
+            <button class="service">SERVICE</button>
+            <button class="more">MORE</button>
+        </section>
+        </header>
+       <div class="text">
+        <p id="hello">
+            hello world
+        </p>
+    </div>
+    <button class="click" onclick="dosomething()">
+        click me
+    </button>
+    <script>
+        function dosomething(){
+            document.getElementById("hello").innerHTML = "how" ;
+        }
+    </script>
+
+    </body>
+    <footer>
+        <section class="containers">
+            <div class="card">
+                <div class="cardla"><h2>
+                    title
+                </h2></div>
+                
+                <p>
+                    CODEX
+                </p>
+            </div>
+            <div class="card">
+                <div class="cardla"><h2>
+                    title
+                </h2></div>
+                
+                <p>
+                    CODEX
+                </p>
+            </div>
+            
+        </section>
+    </footer>
+</html>
